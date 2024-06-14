@@ -39,7 +39,7 @@ def main(file_path, download_folder, access_token, refresh_token):
         api_path = row['api path']
         
         # set download url
-        url = f"https://1-25-0.elements.4sellers.cloud{api_path}"
+        url = f"{api_path}" # insert url before angular bracket
         
         # save path
         save_path = os.path.join(download_folder, f"{reference_code}.webp")
